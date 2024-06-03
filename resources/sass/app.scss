@@ -1,0 +1,63 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.form-control-sm {
+    min-height: calc(1.6em + 0.5rem + calc(var(--bs-border-width) * 2));
+    padding: 0 30px;
+    font-size: 0.7875rem;
+    border-radius: var(--bs-border-radius-sm);
+    border:2px solid #ff98a2;
+    
+  }
+  .toggle-on.btn,.toggle-off.btn { 
+    padding: 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  table.table-bordered.dataTable td {
+    border-left-width: 0;
+    text-align: center;
+    margin: auto 0;
+    vertical-align: middle;  
+}
+
+table.table-bordered.dataTable th{
+  vertical-align: bottom;
+  background-color: #ff98a2;
+  text-align: center;
+  font-size: 15px;
+  border-bottom: 2px solid #DC3545;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.dataTables_filter,.dataTables_length{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px 0;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+
+.dataTables_filter>label,.dataTables_length> label{
+  margin-bottom: 0;
+ 
+}
+
+
