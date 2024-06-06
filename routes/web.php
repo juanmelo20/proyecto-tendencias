@@ -67,20 +67,25 @@ Route::get('changestatusorder',[OrderController::class,'changestatusorder'])->na
 Route::get('forgot-password', [ForgotPasswordController::class,'forgot-password'])->name('forgot-password');
 
 });
-Route::get('/demo/error/404', function () {
-    abort(404);
+
+Route::get('/error-403', function () {
+    abort(403, 'Acceso prohibido');
 });
-Route::get('/demo/error/403', function () {
-    abort(403);
+
+Route::get('/error-404', function () {
+    abort(404, 'Página no encontrada');
 });
-Route::get('/demo/error/419', function () {
-    abort(419);
+
+Route::get('/error-419', function () {
+    abort(419, 'Sesión expirada');
 });
-Route::get('/demo/error/500', function () {
-    abort(500);
+
+Route::get('/error-500', function () {
+    abort(500, 'Error interno del servidor');
 });
-Route::get('/demo/error/503', function () {
-    abort(503);
+
+Route::get('/error-503', function () {
+    abort(503, 'Servicio no disponible');
 });
 
 

@@ -1,36 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page not found | 404 </title>
 
-    <style>
-        body {
-            background-color: #FFF18B;
-        }
-    </style>
-</head>
 
-<body>
-    <div class="content" style="display:flex; justify-content: center;margin-top:12%;font-family:arial">
-        <div class="box" style="width:50%;">
-            <div style="background-color:white;text-align:center;height:300px">
-            <div class="borderTop" style="background-color:#FD905D;height:50px">●●●</div>
-            <div style="">
-            <h1 style="font-size:100px; margin:0;">
-                   404
-                </h1>
-            </div>
-            <img style="width:10%;margin-top:0" src="https://www3.gobiernodecanarias.org/medusa/mediateca/ecoescuela/wp-content/uploads/sites/2/2013/11/11-Senal-de-peligro-indeterminado.png" alt="">
-                <h1 style=" margin-top:0;margin-bottom:30px">PAGE NOT FOUND</h1>
-                <a href="{{route('home')}}" style="background-color:#FD905D;padding:10px 20px;text-decoration:none;font-weight:700;color:black;font-family:arial;border-radius:10px;">Regresar</a>
-            </div>
+@section('content')
+
+<div class="d-flex align-items-center justify-content-center" style="background-color: #6B8E23; height:575px">  <section class="content">
+        <div class="error-page mt-5">
+          <h2 class="headline text-warning"> 404</h2>
+
+          <div class="error-content">
+            <h3><i class="fas fa-exclamation-triangle text-warning"></i class="text-lg"> Oops! Pagina no encontrada.</h3>
+
+            <p>
+               ¡Te hemos perdido! No sabemos que ha podido pasar.. <br>        
+               ¿Pero donde te has metido? Rapido vuelve con nosotros.
+            </p>
+            <div class="d-flex justify-content-center mr-5">
+              <a href="{{route('home')}}" class="btn btn-success">Regresar</a>
+            </div> 
+          </div>
+          <!-- /.error-content -->
         </div>
-        
-    </div>
-</body>
-
-</html>
+        <!-- /.error-page -->
+  </section>
+</div>
+@endsection

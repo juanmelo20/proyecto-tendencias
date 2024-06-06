@@ -31,5 +31,5 @@ class ProductFactory extends Factory
 }
 function randomProductPhoto(): string
 {
-    return "imagesmedicines/" . rand(1,10) . ".jpg";
+    return "public/uploads/products/imagesmedicines" . rand(1,10) . ".jpg";
 }

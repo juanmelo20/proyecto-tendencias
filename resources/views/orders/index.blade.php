@@ -70,10 +70,6 @@
 											<td>
 												<a href="{{ route('orders.show', $order->id) }}" class="btn btn-info btn-sm"
 													title="Mostrar"><i class="fa-solid fa-eye"></i></a>
-												<button onclick="window.open('{{ $order->route }}', '_blank')"
-													class="btn btn-primary btn-sm" title="Ver factura">
-													<i class="fa-solid fa-file-pdf"></i> 
-												</button>
 												<form class="d-inline delete-form"
 													action="{{ route('orders.destroy', $order) }}" method="POST">
 													@csrf
